@@ -1,15 +1,3 @@
-{{-- 
-Generate a modern and clean eCommerce homepage UI for a medical equipment store called "EVOLVE".
-Use Tailwind CSS. Structure should include:
-- Top navigation bar with logo (EVOLVE), menu (Home, Products, About, Contact, Login/Register), and cart icon
-- Full-screen hero section with background image, headline, paragraph, and Shop Now button
-- Featured products grid with image, title, price, Add to Cart button (use placeholders)
-- Why Choose Us section with icons/text: Certified Equipment, Fast Delivery, Affordable Prices, 24/7 Support
-- Testimonials carousel (simple)
-- Newsletter subscription input
-- Footer with links, contact info, and social icons
---}}
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,8 +19,8 @@ Use Tailwind CSS. Structure should include:
                 </div>
                 <div class="hidden md:flex items-center space-x-8">
                     <!-- Menu -->
-                    <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Home</a>
-                    <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Products</a>
+                    <a href="{{ route('home') }}" class="text-gray-700 hover:text-blue-600 font-medium">Home</a>
+                    <a href="{{ route('shop') }}" class="text-gray-700 hover:text-blue-600 font-medium">Products</a>
                     <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">About</a>
                     <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Contact</a>
                     <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Login</a>

@@ -16,11 +16,11 @@
                     <a href="#" class="text-2xl font-bold text-blue-600">EVOLVE</a>
                 </div>
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Home</a>
-                    <a href="#" class="text-blue-600 font-medium">Shop</a>
+                    <a href="{{ route('home') }}" class="text-gray-700 hover:text-blue-600 font-medium">Home</a>
+                    <a href="{{ route('shop') }}" class="text-blue-600 font-medium">Products</a>
                     <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">About</a>
                     <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Contact</a>
-                    <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Login/Register</a>
+                    <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Login</a>
                     <a href="#" class="relative text-gray-700 hover:text-blue-600">
                         <i class="fas fa-shopping-cart text-xl"></i>
                         <span class="absolute -top-2 -right-2 bg-blue-600 text-white text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center">0</span>
