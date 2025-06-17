@@ -45,7 +45,7 @@
                             </p>
                         @enderror
                     </div>
-                    
+
                     <div>
                         <label for="email" class="block text-sm font-medium text-gray-700 mb-1">
                             Email Address
@@ -67,7 +67,53 @@
                             </p>
                         @enderror
                     </div>
-                    
+
+                    <div>
+                        <label for="address" class="block text-sm font-medium text-gray-700 mb-1">
+                            address
+                        </label>
+                        <div class="relative">
+                            <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                                <i class="fas fa-home text-gray-400"></i>
+                            </div>
+                            <input id="address" 
+                                   name="address" 
+                                   type="text" 
+                                   value="{{ old('address') }}"
+                                   required 
+                                   autofocus
+                                   class="pl-10 w-full px-4 py-3 rounded-lg border @error('address') border-red-500 @else border-gray-300 @enderror focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-200">
+                        </div>
+                        @error('address')
+                            <p class="mt-1 text-sm text-red-600 animate-fade-in">
+                                <i class="fas fa-exclamation-circle mr-1"></i> {{ $message }}
+                            </p>
+                        @enderror
+                    </div>
+
+                    <div>
+                        <label for="number" class="block text-sm font-medium text-gray-700 mb-1">
+                            number
+                        </label>
+                        <div class="relative">
+                            <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                                <i class="fas fa-phone text-gray-400"></i>
+                            </div>
+                            <input id="number" 
+                                   name="number" 
+                                   type="text" 
+                                   value="{{ old('number') }}"
+                                   required 
+                                   autofocus
+                                   class="pl-10 w-full px-4 py-3 rounded-lg border @error('number') border-red-500 @else border-gray-300 @enderror focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-200">
+                        </div>
+                        @error('number')
+                            <p class="mt-1 text-sm text-red-600 animate-fade-in">
+                                <i class="fas fa-exclamation-circle mr-1"></i> {{ $message }}
+                            </p>
+                        @enderror
+                    </div>
+
                     <div>
                         <label for="password" class="block text-sm font-medium text-gray-700 mb-1">
                             Password
